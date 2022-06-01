@@ -13,4 +13,4 @@ Disciplina GQSO, ano 2022.
 - [@giovanaccorreia](https://www.github.com/giovanaccorreia)
 - [@carolinafernandesgf](https://www.github.com/carolinafernandesgf)
 
-Alteração do readme por Carolina Fernandes
+
