@@ -9,7 +9,6 @@ Disciplina GQSO, ano 2022.
 - [@diozenio](https://www.github.com/diozenio)
 - [@giovanaccorreia](https://www.github.com/giovanaccorreia)
 - [@carolinafernandesgf](https://www.github.com/carolinafernandesgf)
-- [@mariapalito](https://www.github.com/mariapalito)
 
 ## Etiquetas
 
