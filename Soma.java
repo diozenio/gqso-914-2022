@@ -10,6 +10,8 @@ public class Soma implements HttpHandler {
         try {
             String[] partes = exchange.getRequestURI().getPath().split("/");
             List<Double> numeros = new ArrayList<Double>();
+
+            // Verificação da URL que possua somente números
             for (int i = 2; i < partes.length; i++) {
                 boolean isNumeric = checkStr(partes[i]);
                 if (isNumeric) {
@@ -22,7 +24,11 @@ public class Soma implements HttpHandler {
                     return;
                 }
             }
+
+            // Soma da lista de números da URL
             double soma = numeros.stream().mapToDouble(Double::doubleValue).sum();
+
+            // Resposta válida
             byte[] resposta = Double.toString(soma).getBytes();
             exchange.sendResponseHeaders(200, resposta.length);
             exchange.getResponseBody().write(resposta);
@@ -34,6 +40,7 @@ public class Soma implements HttpHandler {
         }
     }
 
+    // Função que verifica se a string é um número
     private boolean checkStr(String strNum) {
         if (strNum == null) {
             return false;
