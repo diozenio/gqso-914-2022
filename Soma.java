@@ -15,7 +15,6 @@ public class Soma implements HttpHandler {
                 if (isNumeric) {
                     double d = Double.parseDouble(partes[i]);
                     numeros.add(d);
-                    System.out.println(numeros);
                 } else {
                     byte[] resposta = "URL inválido".getBytes();
                     exchange.sendResponseHeaders(200, resposta.length);
