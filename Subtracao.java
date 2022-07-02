@@ -13,7 +13,7 @@ public class Subtracao implements HttpHandler {
 
             // Verificação da URL que possua somente números
             for (int i = 2; i < partes.length; i++) {
-                boolean isNumeric = checkStr(parreducetes[i]);
+                boolean isNumeric = checkStr(partes[i]);
                 if (isNumeric) {
                     double d = Double.parseDouble(partes[i]);
                     numeros.add(d);
@@ -25,9 +25,9 @@ public class Subtracao implements HttpHandler {
                 }
             }
 
-            double subtracao = numeros[0];
-            for(int cont = 1; cont<numeros.length; cont++){
-                subtracao -= numeros[cont];
+            double subtracao = numeros.get(0);
+            for (int cont = 1; cont < numeros.size(); cont++) {
+                subtracao -= numeros.get(cont);
             }
 
             // Resposta válida
