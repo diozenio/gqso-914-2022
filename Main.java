@@ -8,10 +8,10 @@ public class Main {
         InetSocketAddress endereco = new InetSocketAddress(8888);
         HttpServer servidor = HttpServer.create(endereco, 10);
         
+        servidor.createContext("/soma", new Soma());
         servidor.createContext("/multiplicacao", new Multiplicacao());
         servidor.createContext("/subtracao", new Subtracao());
         servidor.start();
-        
         
         System.out.println("Servidor iniciado ouvindo a port " + endereco.getPort());
     }
