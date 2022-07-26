@@ -1,0 +1,6 @@
+META-INF\services\io.jooby.MvcFactory
+app\App.class
+app\Soma.class
+app\Soma$Module.class
+app\Index.class
+app\Index$Module.class
