@@ -1,3 +1,5 @@
-app.Index$Module
 app.Soma$Module
+app.Subtracao$Module
+app.Multiplicacao$Module
+app.Index$Module
 
